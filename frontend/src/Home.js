@@ -36,13 +36,18 @@ const Home = () => {
   
   const onSearch = async (e) => {
     e.preventDefault();
-    if (city == "") {
+    if (city === "") {
       alert("Please fill in all fields");
       return false;
     };
     const response = await seacrhCity(city);
     setSearchResults(response);
-    setShow(true);
+    if (response){
+      setShow(true);
+    } else {
+      alert("Please type the name of the city correctly!")
+    }
+    
   };
 
   return(
