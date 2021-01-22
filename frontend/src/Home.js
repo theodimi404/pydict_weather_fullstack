@@ -45,7 +45,8 @@ const Home = () => {
     if (response){
       setShow(true);
     } else {
-      alert("Please type the name of the city correctly!")
+      alert("Please type the name of the city correctly!");
+      setShow(false);
     }
     
   };
