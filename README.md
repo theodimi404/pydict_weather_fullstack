@@ -51,6 +51,14 @@ npm install
 npm start
 ```
 
+## Run it as a Docker container
+
+Run the following command
+
+```
+docker-compose up
+```
+
 ## Usage
 
 Type http://localhost:3000/ in your browser to access the application. You can search for a greek city, written in greeklish to recieve a weather forecast for four days.
