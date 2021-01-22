@@ -14,6 +14,7 @@ def main(city):
         four_days_prediction = soup.find_all("div", {"class": "analytic-forecast-div"})
         prediction = dict()
 
+        # It creates a dictionary with key names a, b, c, d...
         i = 'a'
         for day in four_days_prediction:
             # Loop through the array that holds the prediction for four days and save for each day
