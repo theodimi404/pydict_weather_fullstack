@@ -4,7 +4,6 @@ import PredictionCard from './PredictionCard'
 
 
 const PredictionCardsLayout = (searchResults) => {
-    console.log(searchResults)
     return(
         <Space>
             <Row gutter={16}>

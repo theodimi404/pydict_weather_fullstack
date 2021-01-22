@@ -5,6 +5,7 @@ import PredictionCardsLayout from './PredictionCardsLayout'
 
 const { Title } = Typography;
 
+// The function that POSTS into the flask server and returns the prediction
 async function seacrhCity(city) {
   const data = {
     "City": city
@@ -30,10 +31,13 @@ const Home = () => {
   const [city, setCity] = useState("");
   const [searchResults, setSearchResults] = useState("");
 
+  // Updates the value that the user types in the input form
   const updateCity = (e) => {
     setCity(e.target.value);
   };
   
+  // OnClick the function will call the function that POSTS into the flask server 
+  // And it will make sure that the user will type the city's name correctly
   const onSearch = async (e) => {
     e.preventDefault();
     if (city === "") {
@@ -83,7 +87,8 @@ const Home = () => {
       </Row>
 
       <br></br>
-
+      {/* variable show exists to make sure that if the user mispells a city, nothing will appear as a result */}
+      {/* eitherwise all four cards appear with broken image links*/}
       {show && ( <PredictionCardsLayout searchResults={searchResults} /> )}
     </div>
   )
