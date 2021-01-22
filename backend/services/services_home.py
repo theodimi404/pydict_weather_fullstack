@@ -27,7 +27,6 @@ def main(city):
 
             prediction[chr(ord(i))] = date
             prediction[chr(ord(i) + 1)] = description
-            print(i)
             prediction[chr(ord(i) + 2)] = temperature
             prediction[chr(ord(i) + 3)] = wind
             prediction[chr(ord(i) + 4)] = 'https://www.skaikairos.gr' + image.img['src']

@@ -76,9 +76,11 @@ const Home = () => {
         </Col>
       </Row>
 
+      <br></br>
 
       {show && ( <PredictionCardsLayout searchResults={searchResults} /> )}
-    </div>)
+    </div>
+  )
 };
 
 export default Home;

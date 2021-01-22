@@ -7,5 +7,9 @@ CORS(app)
 
 app.register_blueprint(controller_home.api)
 
+@app.route('/')
+def home():
+    return "ping"
+
 if __name__ == '__main__':
     app.run(debug=True)
