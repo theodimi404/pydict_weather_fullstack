@@ -63,7 +63,7 @@ docker-compose up
 
 ## Usage
 
-Type http://localhost:3000/ in your browser to access the application. You can search for a greek city, written in greeklish to recieve a weather forecast for four days.
+Type http://localhost:3000/ in your browser to access the application. You can search for a greek city, written in greeklish to receive a weather forecast for four days.
 
 ## Disclaimer
 
